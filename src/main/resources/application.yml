@@ -1,0 +1,15 @@
+spring:
+  application:
+    name: shortly
+
+  datasource:
+    url: jdbc:mysql://localhost:3306/shortly
+    username: ${DB_USERNAME:root}
+    password: ${DB_PASSWORD:password}
+    driver-class-name: com.mysql.cj.jdbc.Driver
+
+  jpa:
+    database-platform: org.hibernate.dialect.MySQL8Dialect
+    hibernate:
+      ddl-auto: update
+    show-sql: true
